@@ -1,0 +1,170 @@
+A Usabilidade é a qualidade que caracteriza o uso de um sistema interativo.
+Ela se refera à relação que se estabilece entre usuário, tarefa, interface, 
+equipamento e demais aspectos do ambiente no qual o usuário utiliza o sistema.
+
+Existe uma "configuração de base" a partir da qual uma interface pode favorecer o estabelecimento da usabilidade
+na relação usuário - sistema.
+
+1.1 Heurísticas de usabilidade
+
+Jakob Nielsen
+	- visibilidade do estado do sistema;
+	- mapeamento entre o sistema e o mundo real;
+	- liberdade e controle ao usuário;
+	- consistência e padrões;
+	- prevenção de erros;
+	- reconhecer em vez de relembrar;
+	- flexibilidade e eficiência de uso;
+	- design estético e minimalista;
+	- suporte para o usuário reconhecer, diagnosticar e recuperar erros;
+	- ajuda e documentação.
+
+1.2 Regras de Ouro
+
+Ben shneiderman
+
+	- perseguir a consistência;
+	- fornecer atalhos;
+	- fornecer feedback informativo;
+	- marcar o final dos diálogos;
+	- fornecer prevenção e manipulação simples de erros;
+	- permitir o cancelamento das ações;
+	- fornecer controle e iniciativa ao usuário;
+	- reduzir a carga de memória de trabalho.
+
+1.3 Princípios de Diálogo
+
+ISO 9241:10 - sete princípios ergonômicos para o projeto e a avaliação interfaces Humano-Computador para aplicações de escritórios
+
+	- adaptação à tarefa;
+	- autodescrição (feedback);
+	- controle ao usuário;
+	- conformidade às expectativas do usuário;
+	- tolerância aos erros;
+	- facilidade de individualização;
+	- facilidade de aprendizagem.
+
+1.4 Critérios ergonômicos
+
+Dominique Scapin e Christian Bastien, ligados ao INRIA(Instituto Nacional de Pesquisa em Automação e Informática da Freança).
+O objetivo do sistema e o de minimizar a ambiguidade na identificação e classificação das qualidades e problemas ergonômicos do software interativo.
+
+Lista: 
+- Condução
+	- convite
+	- agrupamento e distinção entre itens
+		- agrupamento e distinção por localização
+		- agrupamento e distinção por formato
+	- legibilidade
+	- feedback imediato
+- carga de trabalho
+	-brevidade
+		- concisão
+		- ações mínimas
+	- densidade informacional
+- controle explícito
+	- ações explícitas
+	- controle do usuário
+- adaptabilidade
+	- flexibilidade
+	- consideração da experiência do usuário
+- gestão de erros
+	- proteção contra os erros
+	- qualidade das mensagens
+	- correção dos erros
+- homogeneidade/consistência
+- significado de códigos e denominações
+- compatibilidade
+
+1 A condução
+-> A condução visa favorecer principalmente o aprendizado e a utilização do sistema por usuários novatos.
+Neste contexto, a interface deve aconselhar, orientar, informar e conduzir o usuário na interação com o sistema.
+
+1.1 Convite
+-> Engloba os meios utilizados para levar o usuário a realizar determinadas ações.
+
+- Uma interface conidativa apresentará:
+	-títulos claros para as telas, janelas e caixas de diálogo;
+	- informações claras sobre o estado (disponíve, em foco selecionado, entre outros) dos componentes do sistema
+	- informações sobre o preenchimento de um formulário, sobre as entradas esperadas, como seu nome, sua descrição, seu formato e as unidades de medida; 
+	- opções de ajuda claramente indicadas.
+
+1.2 Agrupamento/distinção de itens
+-> Esta é uma qualidade a serviço da "intuitividade" da interface e visa a facilitar a vida detodo tipo de usuário, tanto do novao como do experiente.
+- A rápida compreensão de uma tela pelo usuário depende, dentre outras coisas, do posicionamento, da ordenação e da forma dos objetos (imagens, textos, comandos etc.) que são apresentados.
+
+° Agrupamento e distinção por localização
+-> permite ao usuário perceber rapidamente os agrupamentos a partir da localização das informações nas interfaces.
+Uma interface espacialmente organizada deve:
+	- apresentar grupos e opções de menu definidos logicamente (em função dos objetos e das ações que a eles se aplicam);
+	- apresentar os campos de um formulário em sequência lógica (em função da ordem da tarefa, de sua importância ou frequência de uso);
+	- apresentar listas de dados ou informações coesas (somente informações de um mesmo tipo dentro de determinada lista) e ordenadas logicamente;
+	- separar e aproximar itens e grupos nas telas conforme as relações lógicas que estabelecem entre eles.
+	
+° Agrupamento e distinção por formato
+-> Permite ao usuário perceber rapidamente as similaridades ou diferenças entre as informações a partir da forma gráfica de componentes da interface, como tamanho, cor, estilo dos caracteres etc.
+Uma interface graficamente organizada irá:
+	- estabelecer uma distinção visual entre áreas abrigando elementos de funções diferentes (comandos, ferramentas, dados, informações etc.);
+	- distinguir graficamente rótulos e dados em formulários de entrada.
+
+1.3 Legibilidade
+-> É uma qualidade a serviço de todos, mas particularmente das pessoas idosas e com problemas de visão
+-> Características que possam dificultar ou facilitar a leitura das informações textuais 
+(brilho do caractere, contraste letra/fundo, tamanho da fonte, espaçamento entre palavras, espaçamento entre linhas, espaçamento de parágrafos, comprimento da linha etc.)
+ Em uma interface legível:
+	- o texto longo longo que deve ser lidorapidamente aparece em letras maiúsculas e minúsculas naturamlmente em vez de somente com maiúsculas;
+	- este mesmo tipo de texto é apresentado em linhas com comprimento adequado e com um contraste efetivo com o fundo;
+	- o texto que deve ser lido por idoso ou pessoas com problemas de visão aparece eme letras claras sobre um funco escuro.
+	  Para essas pessoas o fundo brilhante pode ofuscar completamente as letras escuras.
+
+1.4 Feedback imediato
+-> A qualidade e a rapidez do feedback são dois fatores importatnte para o estabelecimento da satisfação e confiança do usuário, assim como para o entendimento do diálogo.
+ A ausência de feedback
+ou sua demora podem ser desconcertantes para o usuário, que pode suspeitar
+de uma falha no sistema e tomar atitudes prejudiciais para os processos em
+andamento.
+
+Uma interface que fornece feedback de qualidade:
+
+	- relata ao usuário o recebimento de todas as entradas por ele efetuadas (as entradas confidenciais serão relatadas de modo a não revelar o seu conteúdo, por exemplo, com asteriscos)
+	- indica ao usuário que um tratamento demorado está sendo realizado, bem como a sua conclusão e o seu resultado;
+
+As respostas do computador devem ser fornecidas, de forma rápida, com
+um tempo de resposta apropriado e consistente para cada tipo de transação.
+Uma resposta rápida deve ser fornecida com informação sobre o resultado
+da transação solicitada.
+
+2.0 A carga de trabalho
+-> Se aplica a um contexto de trabalho intenso e repetitivo, no qual os profissionais que operam o sistema precisarão de interfaces econômicas sob o ponto de vista cognitivo e motor, isto é, que lhes economizem leitura e memorização desnecessárias, assim como deslocamentos inúteis e repetições de entradas.
+
+2.1 Brevidade
+
+° Concisão
+-> O software conciso minimiza a carga perceptiva, cognitiva e motora associada à realização de saídas e entradas individuais
+Uma interface concisa:
+	- apresenta títulos (de telas, janelas e caixas de diálogo), rótulos (de campos, de botões, de comandos) e denominações curtas;
+	- apresenta códigos arbitrários (nome de usuário, senha) curtos;
+	- fornece valores default (para os campos de dados, listas, check boxes) capazes de acelerar as entradas individuais;
+	- fornece o preenchimento automático de vírgulas, pontos decimais e zeros à direita da vírgula nos campos de dados.
+
+
+°Ações mínimas
+-> Caracteriza o software que minimiza e simplifica um conjunto de ações necessárias para o usuário alcançar uma meta ou realizar uma tarefa.
+Uma interface ágil e rápida:
+	- não solicita aos usuários dados que podem ser deduzidos pelo sistema;
+	- não força o usuário a percorrer em sequência todas as páginas de um documento de modo a alcançar uma página específica;
+	- não solicita o mesmo dado ao usuário diversas vezes em uma mesma sequência de diálogo.
+
+2.2 Densidade informacional
+-> Carga de trabalho do usuáriom de um ponto de vista perceptivo e cognitivo, com relação ao conjunto total de itens de informação apresentados, e não a cada elemento ou item individual.
+Uma interface minimalista:
+	- apresenta somente os itens que estão relacionados à tarefa (o restante deve ser removido da tela)
+	- não força os usuários a transportar mentalmente dados de uma tela a outra;
+	- não força os usuários a realizar procedimentos complicados, como a transformação de unidade de medida;
+	- não coloca os usuários diante de tarefas cognitivas complexas, como as de especificação de buscas avançadas.
+
+
+
+
+
+
