@@ -163,8 +163,157 @@ Uma interface minimalista:
 	- não força os usuários a realizar procedimentos complicados, como a transformação de unidade de medida;
 	- não coloca os usuários diante de tarefas cognitivas complexas, como as de especificação de buscas avançadas.
 
+3.0 Controle explícito
+-> Este critério se aplica em particular àstarefaslongas sequenciasis e nas quais os processamentossejam demorados. 
+São situações delicadas, nas quais a falta de controle do usuário sobre asações do sistema pode implicar perda de tempo e de dados.
+Quando os usuári0os definem explicitamente suas entradas, e quando estas estão sob controle, os erros e as ambiguidades são limitados.
+
+3.1 Ações explícitas do usuário
+-> Este critério se aplica antes da realização de ações longas, sequenciais e de tratamento demorado ou ainda que tenham repercussão importante para o usuário.
+Em tais situações, o computador deve executar somente aquilo que o usuário quiser e somente quando ele ordenar.
+Esse critério se refere à ligação explícita que deve existir entre uma ação do usuário e um processamento do sistema.
+Quando o processamento pelo computador resulta de ações explícitas dos usuários, estes aprendem e entendem melhor o funcionamento da aplicação, e menos erros são observados.
+
+- Sempre solicita uma ação explícita do usuário de validação global em um formulário para entrada de diversos dados ou parâmetros;
+- separa as ações de seleção de uma opção e de ativação dessa opção quando se referir a um tratamento demorado
+- não coloca o usuário diante de comandos de dupla repercussão (por exemplo, salvar + fechar)
+
+
+3.2 Controle do usuário
+-> O critério controle do usuário se aplica durante a realização de ações longas, seqüenciais e de tratamento demorado.
+-> Nessas situações os usuários devem estar no controle dos acontecimentos, podendo, por exemplo, comandar uma interrupção, o cancelamento, o reinício, a retomada ou a finalização dos tratamentos.
+
+- o cursor não se desloca de um campo a outro em um formulário como 
+efeito colateral das entradas dos usuários (validação [Enter]) 
+ou do preenchimento completo de um dado de comprimento controlado (o campo senha, por exemplo). 
+Ele o faz como efeito do comando explícito de tabulação ([Tab])
+
+-o usuário encontra as opções para comandar o avanço, o recuo, a interrupção, a retomada ou a finalização de um diálogo seqüencial
+
+- o usuário encontra as opções para comandar a interrupção, a retomada ou a finalização de tratamentos demorados.
+
+4.0 Adaptabilidade
+-> A adaptabilidade é uma qualidade particularmente esperada em sistemas em que o público-alvo é vasto e variado.
+-> Nestes casos, fica evidente que uma única interface não pode atender plenamente a todos os diferentes tipos de usuários.
+
+4.1 Flexibilidade
+-> Este critério se aplica quando há grande variabilidade de estratégias e de condições de contexto para a realização de uma tarefa.
+°Flexibilidade estrutural
+-> Corresponde às diferentes maneiras colocadas à disposição dos usuários para a realização de uma mesma tarefa. Assim, independente de seu nível de competência, o usuário terá mais chances de encontar aquela que lhe satisfaz em determinado contexto.
+
+- diferentes maneiras de realizar a entrada de dados (por digitação, por seleção, por manipulação direta)
+- diferentes caminhos para chegar a uma funcionalidade frequentemente utilizada (ícone na barra de ferramenta, opção em um painel de menu, atalho de teclado);
+- diferentes opções de formato de arquivos e de unidades para os dados
+
+°Personalização
+-> Se refere aos meios colocados à disposição de usuário mais experientes para que estes personalizem a interface de modo a levar em conta as exigências da tarefa, de suas estratégias ou de seus hábitos de trabalho.
+
+- Personalizar as telas, inserindo ou retirando ícones, dados ou comandos;
+- Definir sequencias de ações automáticas;
+- Alterar os valores default oferecidos pelo sistema.
+
+
+4.2 Consideração da experiência do usuário
+-> Este critério se aplica quando a variabilidade no público-alvo se referir especificamente aos diferentes níveis de experiência dos usuários. O software deve ser usado tanto por novatos como por experientes, que não tem as mesmas necessidades de informações e diálogo.
+
+- Fornece aos especialistas atalhos que permitem acesso rápido às funções do sistema;
+- Fornece aos usuários intermitentes diálogos passo a passo;
+- Fornece aos usuários totalmente inexperientes diálogos sob a iniciativa do computador
+
+5.0 A gestão de erros
+-> Este critério se aplica em todas as situações, em particular quando as ações dos usuários forem sujeitas a erros de grande responsabilidade, envolvendo a perda de dados, dinheiro ou colocando em risco a saúde de pessoas.
+-> Quanto menos erros acontecerem, menos interrupções ocorrerão e melhor será o desempenho do usuário.
+-> todos os mecanismos que permitem evitar ou reduzir a ocorrência de erros e que favoreçam sua correção.
+
+5.1 Proteção contra os erros
+
+-> Mecanismos empregados para detectar e prevenir os erros de entradas de dados ou de comandos, e impedir que ações de consequências desastrosas ocorram.
+
+- Informa ao usuário sobre o risco de perda de dados não-gravados ao final de uma sessão de trabalho;
+- não oferece um comando destrutivo como opção default;
+- detecta os erros já no momento da digitação de uma entrada individual em vez de fazê-lo apenas no momento da validação do formulário inteiro
+
+5.2 Qualidade das mensagens de erro
+-> A qualidade das mensagens refere-se à pertinência, à legibilidade e à exatidão da informação dada ao usuário sobre a natureza do erro cometido( sintaxe, formato etc.), e sobre as ações a serem executadas para corrigi-lo.
+
+- Indica ao usuário a razão ou a natureza do erro cometido, o que ele fez de errado, o que deveria ter feito e o que deve fazer para sair da situação de erro
+- É orientada para a tarefa, emprega termos específicos e é breve;
+- Tem um tom neutro, não-reprovdor ou humorístico.
+
+5.3 Correção dos erros
+-> Meios colocados à disposição do usuário com o objetivo de permitir a correção de seus erros.
+
+- Forece funções desfazer e refazer;
+- fornece a possibilidade de o usuário refazer a parte errada de uma entrada (indica o dado errado em um formulário, mantendo todos os outros intactos);
+- fornece ligação direta entre o relatório de erro e o local onde ele se produz.
+
+6.0 A homogeneidade/coerência
+-> Diante de uma tela desconhecida, eles tentarão empregar estratégias desenvolvidas na interação com outras telas de um mesmo software.
+-> forma na qual as escolhas no projeto da interface (códigos, denominações, formatos, procedimentos etc.) são conservadas idênticas em contextos idênticos e diferentes para contextos diferentes.
+-> Os procedimentos, rótulos, ccomandos etc. são mais facilmente reconhecidos, localizados e utilizados quando seu formato, localização ou sintaxe são estáveis de uma tela para outra, de uma seção para outra.
+
+- Os códigos e denominações são definidos pelos mesmos critérios em contextos idênticos
+- A distribuição, a apresentação e a denominação dos objetos nas telas são padronizadas;
+- A sintaxe dos procedimentos é padronizada (utiliza os mesmos meios para obter os mesmos resultados).
+
+7.0 O significado dos códigos e denominações
+-> Adequação entre o objeto ou a informação apresentada ou pedida e sua referência na interface. Códigos e denominações não-significativos para os usuários podem levá-los a cometer erros como escolher a opção errada ou deixar de informar um dado importamte.
+
+- Os nomes de funções e objetos de interação são familiares para os usuários
+- Os códigos são representativos do conteúdo que veiculam e são distintos (por exemplo: M - Masculino/ F - Feminino, em vez de 1 - Homens/ 2 - Mulheres)
+- As abreviações são de imediata interpretação
+
+8.0 A compatibilidade
+-> As características do sistema devem ser compatíveis com as do usuário em termos cognitivos (memória, percepção), demográficos (idade, sexo), culturais (hábitos), de competência (conhecimento e desempenho), assim como com suas expectativas.
+-> Grau de similaridade entre diferentes sistemas que não executados em ummesmo ambiente operacional ( Windows, Mac, OpenLoog). Trata-se de um tipo de consistência externa entre aplicativos de um mesmo ambiente
+
+- A trasnferência de informações do contexto da tarefa oara o do sistema é mais rápida e eficaz ( O volume de informação que deve ser recodificada é menor);
+- Os procedimentos e as tarefas são organizados de maneira a respeitar expectativas ou costumes do usuário
+- As traduções, as transposições, as interpretações ou referências à documentação são minimizadas (as telas são compatíveis com os documentos em papel, se denominações de comandos são comaptíveis com o vocabulário do usuário)
+- A informação é apresentada de forma diretamente utilizável
+
+9.0 Conclusão
+1.5 Conclusões Com base no que foi exposto é possível estabelecer algumas relações entre aspectos do contexto de operação dos sistemas e os critérios ergonômicos a priorizar em uma atividade de projeto e/ou avaliação de usabilidade. 
+
+Quando o público-alvo for composto de novatos e intermitentes, 
+especialmente nos casos de sistemas que são usados apenas uma vez (por exemplo, instaladores) ou de vez em quando (por exemplo, software do imposto de renda), 
+deve-se priorizar os critérios condução, consistência e significado dos códigos e denominações; 
+
+Quando os usuários forem experientes em suas tarefas, 
+mas novatos no uso do sistema, 
+o critério compatibilidade deve ser priorizado; 
+
+Quando um público geral, incluindo novatos e intermitentes, 
+estiver realizando tarefas críticas, sujeitas a erros com repercussões importantes (por exemplo, o software do imposto de renda), 
+todos os critérios da gestão de erros se aplicam necessariamente; 
+
+Quando um público geral, 
+incluindo novatos e intermitentes, 
+estiver realizando tarefas de busca de informação, 
+a densidade informacional deve ser um critério prioritário no projeto/avaliação; 
+
+A legibilidade é um critério importante quando a tarefa é de leitura e o público-alvo 
+incluir pessoas idosas ou com problemas de visão 
+(como o site de um hospital ou de um laboratório de análises clínicas). 
+
+Quando o público-alvo for composto de usuários novatos e experientes 
+(por exemplo, no caso de um software de telemarketing, no qual a alta rotatividade de pessoal faz com que se tenha sempre novatos e experientes), 
+o critério consideração da experiência do usuário deve ser necessariamente aplicável. 
+
+Quando profissionais usam sistemas aplicativos para realizar suas tarefas em situação 
+de trabalho intenso e por vezes repetitivo, 
+todos os critérios de brevidade se aplicam necessariamente. 
+
+Quando as funções de um sistema puderem ser utilizadas para diferentes tarefas, 
+em diferentes situações, 
+por usuários de diferentes culturas profissionais, 
+o critério de flexibilidade deve ser considerado prioritariamente.
+
+Quando as tarefas envolverem uma longa seqüência de passos ou forem 
+de tratamento demorado pelo sistema, 
+o critério de controle explícito deve ser definido como prioritário.
 
 
 
-
+FIM ...
 
